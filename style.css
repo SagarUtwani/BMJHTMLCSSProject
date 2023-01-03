@@ -1,0 +1,212 @@
+:root {
+    --txtClr: #333;
+    --bgClr: hsl(0, 0%, 100%);
+    --bg: linear-gradient(to right, hsla(214, 100%, 90%, 100%) 0%, hsla(214, 100%, 90%, 0%) 20%, hsla(214, 100%, 90%, 0%) 50%, hsla(214, 100%, 90%, 0%) 80%, hsla(214, 100%, 90%, 100%) 100%);
+    --a0Clr: hsl(60, 100%, 97%);
+    --a1Clr: hsl(50, 100%, 95%);
+    --a2Clr: hsl(50, 100%, 85%);
+    --a3Clr: hsl(45, 100%, 77%);
+    --a4Clr: hsl(50, 100%, 28%);
+    --b0Clr: hsl(213, 100%, 96%);
+    --b1Clr: hsl(214, 100%, 93%);
+    --b2Clr: hsl(214, 100%, 84%);
+    --b3Clr: hsl(214, 65%, 43%);
+    --b4Clr: hsl(214, 100%, 25%);
+    --o1Clr: hsl(100, 100%, 30%);
+    --r1Clr: hsl(0, 100%, 60%);
+    --hdrImg: url(images/hdr/hdr-main-lite.svg);
+    --hdrAdvImg: url(images/hdr/hdr-adv-lite.svg);
+    --h1Shadow2: 2px 2px 2px hsl(0, 0%, 100%), inset 1px 1px 1px hsl(24, 100%, 100%);
+    --h1Shadow: 1px 1px 1px hsl(0, 0%, 100%), -1px -1px 1px hsl(0, 0%, 100%);
+    --trans: all linear 0.5s;
+}
+/* header and navigation bar css start */
+._headerContainer{
+    width: 90vw;
+    height: 250px;
+    margin: auto;
+}
+._logodiv {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+._logo {
+    width: 100px;
+
+}
+
+._navbardiv {
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+._navigationlistitems {
+    display: inline;
+}
+
+._navanchors {
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+._navanchors:hover{
+    background-color: red;
+    color: white;
+}
+._navanchors:active{
+    background-color: green;
+}
+/* header and navigation bar css ends */
+/* chess page css start */
+
+._chesstable{
+    border: 1px solid black;
+    padding: 0px;
+    margin: auto;
+}
+._chesstableCell{
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+}
+.white-box{
+    background-color: white;
+}
+.black-box{
+    background-color: rgba(110, 100, 255, 0.3);
+}
+/* chess page css ends */
+/* grid page css start */
+/* first grid css start */
+._gridcontainer{
+    border: 3px solid black;
+}
+.gridwrapper{
+    border: 1px solid red;
+    margin: auto;
+    width: 50%;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto; */
+    gap: 10px;
+}
+.griditemsbox{
+    padding: 8px;
+    background: linear-gradient(to top right,var(--b2Clr) 0%,var(--b2Clr) 30%,var(--bgClr) 100%);
+    border-radius: 5px;
+    /* background-color: rgb(130, 175, 214); */
+}
+#secondlastitem{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#lastitem{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+/* first grid css ends */
+/* second grid css start */
+.gridwrapper2{
+    text-align: right;
+    margin: auto;
+    display: none;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 1rem;
+    gap: 10px;
+
+}
+.griditemsbox2{
+    padding: 8px;
+    background: linear-gradient(to bottom, #feffff 0%, #d6dbff 100%);
+}
+.griditems2{
+    height: 40px;
+}
+.lastitem2{
+    width: 200px;
+}
+.lastcolumnwrapper{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+#data{
+    background: url(Assets/data.gif) no-repeat left top;
+}
+#geometry{
+    background: url(Assets/geometry.gif) no-repeat left top;
+}
+#numbers{
+    background: url(Assets/numbers.gif) no-repeat left top;
+}
+#puzzles{
+    background: url(Assets/puzzles.gif) no-repeat left top;
+}
+#money{
+    background: url(Assets/money.gif) no-repeat left top;
+}
+#algebra{
+    background: url(Assets/algebra.gif) no-repeat left top;
+}
+#calculus{
+    background: url(Assets/calculus.gif) no-repeat left top;
+}
+#physics{
+    background: url(Assets/physics.gif) no-repeat left top;
+}
+#games{
+    background: url(Assets/games.gif) no-repeat left top;
+}
+#dictionary{
+    background: url(Assets/dictionary.gif) no-repeat left top;
+}
+#worksheets{
+    background: url(Assets/worksheet.gif) no-repeat left top;
+}
+#measurement{
+    background: url(Assets/measurement.gif) no-repeat left top;
+}
+#activities{
+    background: url(Assets/Activities.gif) no-repeat left top;
+}
+/* second grid css ends */
+/* grid page css ends */
+
+
+/* media queries*/
+@media only screen and (max-width: 298px){
+    .gridwrapper{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media only screen and (min-width: 299px) {
+    .gridwrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (min-width: 449px) {
+    .gridwrapper{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+@media only screen and (min-width: 690px) {
+    .gridwrapper{
+        display: none;
+    }
+    .gridwrapper2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
