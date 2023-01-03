@@ -86,11 +86,8 @@
 /* chess page css ends */
 /* grid page css start */
 /* first grid css start */
-._gridcontainer{
-    border: 3px solid black;
-}
+
 .gridwrapper{
-    border: 1px solid red;
     margin: auto;
     width: 50%;
     /* display: grid;
@@ -103,14 +100,14 @@
     border-radius: 5px;
     /* background-color: rgb(130, 175, 214); */
 }
-#secondlastitem{
+/* #secondlastitem{
     grid-column-start: 2;
     grid-column-end: 3;
 }
 #lastitem{
     grid-column-start: 3;
     grid-column-end: 4;
-}
+} */
 /* first grid css ends */
 /* second grid css start */
 .gridwrapper2{
@@ -128,6 +125,7 @@
 }
 .griditems2{
     height: 40px;
+    width: 200px;
 }
 .lastitem2{
     width: 200px;
@@ -206,6 +204,14 @@
         display: grid;
         grid-template-columns: auto auto auto auto;
     }
+    #secondlastitem{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #lastitem{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
 }
 @media only screen and (min-width: 690px) {
     .gridwrapper{
@@ -214,5 +220,9 @@
     .gridwrapper2{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    ._gridcontainer{
+        width: 600px;
+        margin: auto;
     }
 }
