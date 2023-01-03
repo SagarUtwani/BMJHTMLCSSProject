@@ -41,6 +41,8 @@
     float: right;
     margin-left: 20px;
     margin-top: 20px;
+    /*rough*/
+    display: none;
 }
 
 
@@ -62,6 +64,31 @@
     color: white;
 }
 ._navanchors:active{
+    background-color: green;
+}
+
+/*second short nav*/
+.shortnavbardiv{
+    float: right;
+}
+.shortlistitem{
+    list-style: none;
+}
+.shortnavacnchor{
+    width: 200px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+    display: block;
+    border-radius: 10px;
+}
+.shortnavacnchor:hover{
+    background-color: red;
+    color: white;
+}
+.shortnavacnchor:active{
     background-color: green;
 }
 /* header and navigation bar css ends */
@@ -213,7 +240,7 @@
         grid-column-end: 4;
     }
 }
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 770px) {
     .gridwrapper{
         display: none;
     }
@@ -224,5 +251,11 @@
     ._gridcontainer{
         width: 600px;
         margin: auto;
+    }
+    .shortnavbardiv{
+        display: none;
+    }
+    ._navbardiv {
+        display: block;
     }
 }
