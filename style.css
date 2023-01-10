@@ -206,6 +206,28 @@
 /* second grid css ends */
 /* grid page css ends */
 
+/*Single page css starts*/
+.HeroPart{
+    color: white;
+}
+.HeroImageText{
+    background: url(Assets/HeroImage.jpg) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 1200px;
+}
+.heading1{
+    margin: auto;
+    font-size: 48px;
+    padding: 50px 0px 0px 50px;
+}
+.HeroImageText>p{
+    font-size: 20px;
+    padding: 10px;
+}
+/*Single page css ends*/
+
+
 
 /* media queries*/
 @media only screen and (max-width: 298px){
